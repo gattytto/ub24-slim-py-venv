@@ -6,4 +6,6 @@ RUN apt update && apt dist-upgrade -y && apt install -y \
     python3 \
     git \
     libpq-dev \
-    gcc
+    gcc \
+    nodejs \
+    npm
