@@ -8,4 +8,8 @@ RUN apt update && apt dist-upgrade -y && apt install -y \
     libpq-dev \
     gcc \
     nodejs \
-    npm
+    npm \
+    curl \
+    wget && \
+    wget -qO ripgrep.deb https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep_15.1.0-1_amd64.deb && \
+    apt install -y ./ripgrep.deb
