@@ -10,6 +10,15 @@ RUN apt update && apt dist-upgrade -y && apt install -y \
     nodejs \
     npm \
     curl \
-    wget && \
+    wget \
+    fd-find \
+    jq \
+    less \
+    file \
+    patch \
+    unzip \
+    zip \
+    procps && \
+    ln -s /usr/bin/fdfind /usr/local/bin/fd && \
     wget -qO ripgrep.deb https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep_15.1.0-1_amd64.deb && \
     apt install -y ./ripgrep.deb
